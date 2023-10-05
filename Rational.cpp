@@ -143,7 +143,7 @@ Rational Rational::operator/(const Rational &other){
 }
 
 /**
- * @brief stream insertion operator
+ * @brief Stream insertion operator
  * 
  * @param os 
  * @param rational 

@@ -16,15 +16,12 @@
 
 class Rational{
 public:
-    Rational();
-    Rational(int num, int den);
-    Rational(const char *fraction);
-    Rational(const Rational &copy);
-
-    friend std::ostream &operator<<(std::ostream &os, const Rational &rational);
+    Rational(); //default constructor;
+    Rational(int num, int den); //int constructor
+    Rational(const char *fraction); //string constructor
+    Rational(const Rational &copy); //copy constructor
 
     operator double() const;
-
     void reduce();
 
     Rational operator=(const char *str);
@@ -32,6 +29,8 @@ public:
     Rational operator-(const Rational &other);
     Rational operator/(const Rational &other);
     Rational operator*(const Rational &other);
+    
+    friend std::ostream &operator<<(std::ostream &os, const Rational &rational);
 
 private:
     int numerator, denominator;
