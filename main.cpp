@@ -1,9 +1,9 @@
 /**
  * @file main.cpp
- * @author your name (you@domain.com)
+ * @author Luke Steinford
  * @brief 
  * @version 0.1
- * @date 
+ * @date 2023-09-28
  * 
  */
 #include <iostream>
@@ -15,37 +15,37 @@ using std::endl;
 int main()
 {
     Rational num0;
-    cout <<"num0 = "<<num0<<endl;
+    cout << "num0 = " << num0 << endl;
 
     Rational num1(12,16);
-    cout <<"num1 = "<<num1<<endl;
+    cout << "num1 = " << num1 << endl;
 
     Rational num2;
-    num2=num1;//assignment
-    cout <<"num2 = "<<num2<<endl;
-    cout<<"num2 as a decimal = "<<static_cast<double>(num2)<<endl;//type conversion operator
+    num2 = num1; //assignment
+    cout << "num2 = " << num2 << endl;
+    cout << "num2 as a decimal = " << static_cast<double>(num2) << endl;//type conversion operator
 
-    Rational num3 = num2;//initialization
-    cout <<"num3 = "<<num3<<endl;
+    Rational num3 = num2; //initialization
+    cout << "num3 = " << num3 << endl;
 
     num3.reduce();
-    cout <<"Reduced num3 = "<<num3<<endl;
+    cout << "Reduced num3 = " << num3 << endl;
 
     Rational num4("3/-4");//Convert Constructor
-    cout <<"num4 = "<<num4<<endl;
+    cout << "num4 = " << num4 << endl;
     num4.reduce();
-    cout <<"Reduced num4 = "<<num4<<endl;
+    cout << "Reduced num4 = " << num4 << endl;
 
-    double num5 = num4;//type conversion operator
-    cout <<"num5 = "<<num5<<endl;
+    double num5 = num4; //type conversion operator
+    cout << "num5 = " << num5 << endl;
 
     Rational num6 = "3/4";
-    cout <<"num6 = "<<num6<<endl;
+    cout << "num6 = " << num6 << endl;
 
     num1 = "3/7";
-    cout <<"num1 = "<<num1<<endl;
+    cout << "num1 = " << num1 << endl;
 
-    cout <<"\nLet's do some math...\n"<<endl;
+    cout << "\nLet's do some math...\n" << endl;
     
     Rational num7 = num1 + num2;
     cout << num1 << " + " << num2 << " = " << num7 << endl;
